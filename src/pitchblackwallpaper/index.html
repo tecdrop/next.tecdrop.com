@@ -1,0 +1,36 @@
+---
+---
+
+Hello World
+
+{% from "blocks/reviews.njk" import reviewBlock with context %} 
+
+<section class="section">
+  <h2 class="title">Ten thousand reviews</h2>
+  <h2 class="subtitle">See what Pitch Black Wallpaper users are saying</h2>
+
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-half-tablet is-one-third-widescreen">
+        {{ reviewBlock("Simple, smart, brilliant ... no unnecessary complexity. Tecdrop knows what it's doing.",
+                       "Soren Rodman (Google Play)") }}
+        {{ reviewBlock("Lol Seriously, I'm giving this five stars for the humor and sarcasm. 'Congratulations! It's a black wallpaper!' Loooollll",
+                       "Matt Ramos (Google Play)") }}
+      </div>
+      <div class="column is-half-tablet is-one-third-widescreen">
+        {{ reviewBlock("The simplest concepts are often the most brilliant. This app is awesome.",
+                       "Bob Newell (Google Play)") }}
+        {{ reviewBlock("A great app that you'll have no trouble using, and will definitely help with your device performance and battery drain. Don't think about it - try it out!",
+                       "Download3K Excellent Award",
+                       "http://www.download3k.com/Desktop-Enhancements/Themes-wallpapers/Download-Pitch-Black-Wallpaper.html") }}
+      </div>
+      <div class="column is-half-tablet is-one-third-widescreen">
+        {{ reviewBlock("#1 on my list of apps to install That is everytime I do reformat my phone. Thanks! More power!",
+                       "Nikki Pulga (Google Play)") }}
+        {{ reviewBlock("If you're like me ... I am a battery hog with my phone, but since using this app, I haven't had that issue. ... This is a battery saver and a cool look for my phone.",
+                       "Total Tech (YouTube)",
+                       "https://www.youtube.com/watch?v=q1sSZwHOcdo") }}
+      </div>
+    </div>
+  </div>
+</section>

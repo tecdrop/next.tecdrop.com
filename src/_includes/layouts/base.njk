@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Instructs web crawlers to not index the page and to not crawl any of the links on the page -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{{ " /assets/styles/main.css" | url }}">
+
+    <title>{{ seoTitle }}</title>
+    <meta name="description" content="{{ seoDescription }}">
+  </head>
+  <body>
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+  </body>
+</html>
