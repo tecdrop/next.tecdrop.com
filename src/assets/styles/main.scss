@@ -1,11 +1,26 @@
 @charset "utf-8";
 
+// Brand colors
+$orange: #ff8200;
+
+// Update Bulma's global variables
+$primary: $orange;
+
 @import "../../../node_modules/bulma/sass/utilities/_all.sass";
+
 @import "../../../node_modules/bulma/sass/base/_all.sass";
-@import "../../../node_modules/bulma/sass/layout/section.sass";
-@import "../../../node_modules/bulma/sass/elements/container.sass";
-@import "../../../node_modules/bulma/sass/grid/columns.sass";
-@import "../../../node_modules/bulma/sass/elements/title.sass";
-@import "../../../node_modules/bulma/sass/elements/box.sass";
+
 @import "../../../node_modules/bulma/sass/components/level.sass";
+
+@import "../../../node_modules/bulma/sass/elements/box.sass";
+@import "../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../node_modules/bulma/sass/elements/container.sass";
+@import "../../../node_modules/bulma/sass/elements/title.sass";
+
+@import "../../../node_modules/bulma/sass/grid/columns.sass";
+
+@import "../../../node_modules/bulma/sass/helpers/color.sass";
 @import "../../../node_modules/bulma/sass/helpers/spacing.sass";
+
+@import "../../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../../node_modules/bulma/sass/layout/section.sass";
