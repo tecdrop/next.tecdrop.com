@@ -1,0 +1,9 @@
+{% macro featureBlock(iconId, title, text) %}
+  <div class="card td-feature-card">
+    <div class="card-content">
+      <i class="material-icons td-feature-card-icon">{{ iconId }}</i>
+      <h3 class="title is-4">{{ title }}</h3>
+      <p>{{ text | safe }}</p>
+    </div>
+  </div>
+{% endmacro %}

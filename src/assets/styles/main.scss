@@ -6,6 +6,7 @@ $orange: #ff8200;
 $custom-colors: ("pitch-black": #000000);
 
 // Update Bulma's global variables
+$family-sans-serif: "Roboto", sans-serif;
 $primary: $orange;
 
 @import "../../../node_modules/bulma/sass/utilities/_all.sass";
@@ -18,19 +19,26 @@ $primary: $orange;
 @import "../../../node_modules/bulma/sass/elements/box.sass";
 @import "../../../node_modules/bulma/sass/elements/button.sass";
 @import "../../../node_modules/bulma/sass/elements/container.sass";
+@import "../../../node_modules/bulma/sass/elements/icon.sass";
 @import "../../../node_modules/bulma/sass/elements/title.sass";
 
 @import "../../../node_modules/bulma/sass/grid/columns.sass";
 
 @import "../../../node_modules/bulma/sass/helpers/color.sass";
 @import "../../../node_modules/bulma/sass/helpers/spacing.sass";
+@import "../../../node_modules/bulma/sass/helpers/typography.sass";
 
 @import "../../../node_modules/bulma/sass/layout/hero.sass";
 @import "../../../node_modules/bulma/sass/layout/section.sass";
 
 
-.tcd-card--feature {
+.td-feature-card {
   padding: 3.75rem 16% 2.5rem;
   border-radius: 8px;
   box-shadow: 0 0 26.19px 0.81px rgba(42,74,91,0.08), 0 0 0 1px rgba(50,46,97,0.1);
+}
+
+.td-feature-card-icon {
+  font-size: 96px;
+  margin-bottom: 1.5rem;
 }
