@@ -25,6 +25,7 @@ $primary: $orange;
 @import "../../../node_modules/bulma/sass/grid/columns.sass";
 
 @import "../../../node_modules/bulma/sass/helpers/color.sass";
+@import "../../../node_modules/bulma/sass/helpers/other.sass";
 @import "../../../node_modules/bulma/sass/helpers/spacing.sass";
 @import "../../../node_modules/bulma/sass/helpers/typography.sass";
 
@@ -41,4 +42,32 @@ $primary: $orange;
 .td-feature-card-icon {
   font-size: 96px;
   margin-bottom: 1.5rem;
+}
+
+
+.masonry {
+  column-count: 3;
+  margin: $gap;
+  column-gap: $gap;
+
+  .masonry-item {
+    margin: 0 0 $gap;
+    break-inside: avoid;
+  }
+
+  @include mobile {
+    column-count: 1;
+  }
+
+  @include tablet {
+    column-count: 2;
+  }
+
+  @include desktop {
+    column-count: 3;
+  }
+
+  @include widescreen {
+    column-count: 3;
+  }
 }

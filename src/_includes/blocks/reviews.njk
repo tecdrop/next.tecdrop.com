@@ -1,18 +1,25 @@
-{% macro reviewBlock(quote, author, url) %}
-  <div class="column is-half-tablet is-one-third-widescreen">
-    <div class="box mb-4">
-      <p>{{ quote | safe }}</p>
-    </div>
+{% macro reviewBlock(review) %}
+  <div class="box is-shadowless">
+    <p>{{ review.quote | safe }}</p>
     <div class="level is-mobile">
       <div class="level-left">
         <div class="level-item">
-          <a href="{{ url }}" target="_blank">
-            <p>{{ author | safe }}</p>
+          <a href="{{ review.url }}" target="_blank">
+            {# <p>{{ (review.sourceLine if review.sourceLine else review.source) | safe }} ({{ review.medium }})</p> #}
+            <p>{{ (review.sourceLine if review.sourceLine else review.source) | safe }} {{ "(" + review.medium + ")" if review.medium }}</p>
           </a>
         </div>
       </div>
       <div class="level-right">
-        <div class="level-item">★★★★★</div>
+        <div class="level-item">
+          {% if review.stars -%}
+            <span>
+              {%- for i in range(0, review.stars) -%}★{%- endfor -%}
+            </span>
+          {% else %}
+            {# [NOSTARS] #}
+          {% endif -%}
+        </div>
       </div>
     </div>
   </div>

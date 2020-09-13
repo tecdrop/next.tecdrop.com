@@ -1,4 +1,5 @@
 const pluginSass = require("eleventy-plugin-sass");
+const yaml = require("js-yaml");
 
 module.exports = function (eleventyConfig) {
 
@@ -11,6 +12,9 @@ module.exports = function (eleventyConfig) {
     watch: ["src/**/main.scss"],
     sourcemaps: true
   });
+
+  // Add support for YAML data files
+  eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
   return {
     dir: {
