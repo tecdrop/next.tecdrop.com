@@ -1,26 +1,40 @@
 {% macro reviewBlock(review) %}
   <div class="box is-shadowless">
     <p>{{ review.quote | safe }}</p>
-    <div class="level is-mobile">
-      <div class="level-left">
-        <div class="level-item">
-          <a href="{{ review.url }}" target="_blank">
-            {# <p>{{ (review.sourceLine if review.sourceLine else review.source) | safe }} ({{ review.medium }})</p> #}
-            <p>{{ (review.sourceLine if review.sourceLine else review.source) | safe }} {{ "(" + review.medium + ")" if review.medium }}</p>
-          </a>
-        </div>
-      </div>
-      <div class="level-right">
-        <div class="level-item">
-          {% if review.stars -%}
-            <span>
-              {%- for i in range(0, review.stars) -%}★{%- endfor -%}
-            </span>
-          {% else %}
-            {# [NOSTARS] #}
-          {% endif -%}
-        </div>
-      </div>
-    </div>
+    <a href="{{ review.url }}" target="_blank">
+      <p>{{ (review.sourceLine if review.sourceLine else review.source) | safe }} {{ "(" + review.medium + ")" if review.medium }}</p>
+    </a>
+    {% if review.stars -%}
+      <span>
+        {%- for i in range(0, review.stars) -%}★{%- endfor -%}
+      </span>
+    {% else %}
+      {# [NOSTARS] #}
+    {% endif -%}
   </div>
+{% endmacro %}
+
+{# Display the specified reviews in Masonry-like columns #}
+{% macro reviewsMasonry(reviews) %}
+  <div class="masonry">
+    {% for review in reviews -%}
+      <div class="masonry-item">
+        {{ reviewBlock(review) }}
+      </div>
+    {%- endfor %}
+  </div>
+{% endmacro %}
+
+{# Creates a Reviews section with the specified reviews displayed in Masonry-like columns #}
+{% macro reviewsSection(reviews, title, subtitle) %}
+  <section class="section has-background-light is-medium">
+    <div class="container">
+      <header class="has-text-centered mb-6">
+        <h2 class="title is-1 is-spaced">{{ title }}</h2>
+        <h2 class="subtitle is-4">{{ subtitle }}</h2>
+      </header>
+
+      {{ reviewsMasonry(reviews) }}
+    </div>
+  </section>
 {% endmacro %}

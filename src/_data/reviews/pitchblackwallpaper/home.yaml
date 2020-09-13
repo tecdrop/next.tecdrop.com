@@ -1,9 +1,31 @@
+- quote: PERFECT! Love it. Does exactly what it says, simply and efficiently. The perfect app.
+  source: James Addams
+  medium: Google Play
+  url: https://play.google.com/store/apps/details?id=com.tecdrop.pitchblackwallpaper
+  stars: 5
+  date: 2016-04-07
+
+- quote: I love this app
+  source: Umer Farooq
+  medium: Google Play
+  url: https://play.google.com/store/apps/details?id=com.tecdrop.pitchblackwallpaper
+  stars: 5
+  date: 2018-07-09
+
 - quote: Simple, smart, brilliant. A useful little app with easy one tap application. It features no ads, no hidden purchases, and no unnecessary complexity. Tecdrop knows what it's doing.
   source: Soren Rodman
   medium: Google Play
   url: https://play.google.com/store/apps/details?id=com.tecdrop.pitchblackwallpaper
   stars: 5
   date: 2016-12-07
+  fav: true
+
+- quote: A great app that you'll have no trouble using, and will definitely help with your device performance and battery drain. Don't think about it - try it out!
+  sourceLine: Download3K Excellent Award
+  source: Download3K
+  url: http://www.download3k.com/Desktop-Enhancements/Themes-wallpapers/Download-Pitch-Black-Wallpaper.html
+  stars: 5
+  date: 2015-09-04
   fav: true
 
 - quote: Lol! Seriously, I'm giving this five stars for the humor and sarcasm. 'Congratulations! It's a black wallpaper!' Loooollll
@@ -22,19 +44,10 @@
   date: 2017-05-07
   fav: true
 
-- quote: "First thing to install #wallpaper #clean"
-  source: Timo Kallela
-  medium: Twitter
-  url: https://twitter.com/kallelat/status/854725519002284033
-  date: 2017-04-19
-
-- quote: A great app that you'll have no trouble using, and will definitely help with your device performance and battery drain. Don't think about it - try it out!
-  sourceLine: "Download3K Editor's Review: Excellent"
-  source: Download3K
-  url: http://www.download3k.com/Desktop-Enhancements/Themes-wallpapers/Download-Pitch-Black-Wallpaper.html
-  stars: 5
-  date: 2015-09-04
-  fav: true
+- quote: "Try Pitch Black Wallpaper on Android. As we said earlier on Computertaal, a black background makes your battery last longer. Why? Because you just don't need to put energy into something that is dark."
+  source: Computertaal
+  url: https://computertaal.info/2015/09/07/tecdrop-handige-appjes-voor-dagelijks-gebruik/
+  date: 2015-09-07
 
 - quote: "#1 on my list of apps to install! That is everytime I do reformat my phone. Thanks! More power!"
   source: Nikki Pulga
@@ -43,11 +56,6 @@
   stars: 5
   date: 2016-09-29
   fav: true
-
-- quote: "Try Pitch Black Wallpaper on Android. As we said earlier on Computertaal, a black background makes your battery last longer. Why? Because you just don't need to put energy into something that is dark."
-  source: Computertaal
-  url: https://computertaal.info/2015/09/07/tecdrop-handige-appjes-voor-dagelijks-gebruik/
-  date: 2015-09-07
 
 - quote: "If you're like me ... I am a battery hog with my phone, but since using this app, I haven't had that issue. ... This is a battery saver and a cool look for my phone."
   source: Total Tech
@@ -72,10 +80,16 @@
   date: 2019-09-21
   fav: true
 
-- quote: This is the only wallpaper I use! I may change icons, or clocks, or whatever; but my wallpaper is always PITCH BLACK!
-  source: Joey Barnes
-  medium: Google Play
-  url: https://play.google.com/store/apps/details?id=com.tecdrop.pitchblackwallpaper
-  stars: 5
-  date: 2018-05-15
-  fav: true
+- quote: "First thing to install #wallpaper #clean"
+  source: Timo Kallela
+  medium: Twitter
+  url: https://twitter.com/kallelat/status/854725519002284033
+  date: 2017-04-19
+
+# - quote: This is the only wallpaper I use! I may change icons, or clocks, or whatever; but my wallpaper is always PITCH BLACK!
+#   source: Joey Barnes
+#   medium: Google Play
+#   url: https://play.google.com/store/apps/details?id=com.tecdrop.pitchblackwallpaper
+#   stars: 5
+#   date: 2018-05-15
+#   fav: true
