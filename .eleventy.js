@@ -3,6 +3,9 @@ const pluginSass = require("eleventy-plugin-sass");
 module.exports = function (eleventyConfig) {
 
 
+  // Copy images to output
+  eleventyConfig.addPassthroughCopy("src/assets/images");
+
   // The Sass Eleventy plugin
   eleventyConfig.addPlugin(pluginSass, {
     watch: ["src/**/main.scss"],

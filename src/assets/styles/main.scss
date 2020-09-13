@@ -3,6 +3,8 @@
 // Brand colors
 $orange: #ff8200;
 
+$custom-colors: ("pitch-black": #000000);
+
 // Update Bulma's global variables
 $primary: $orange;
 
@@ -10,6 +12,7 @@ $primary: $orange;
 
 @import "../../../node_modules/bulma/sass/base/_all.sass";
 
+@import "../../../node_modules/bulma/sass/components/card.sass";
 @import "../../../node_modules/bulma/sass/components/level.sass";
 
 @import "../../../node_modules/bulma/sass/elements/box.sass";
@@ -24,3 +27,10 @@ $primary: $orange;
 
 @import "../../../node_modules/bulma/sass/layout/hero.sass";
 @import "../../../node_modules/bulma/sass/layout/section.sass";
+
+
+.tcd-card--feature {
+  padding: 3.75rem 16% 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 26.19px 0.81px rgba(42,74,91,0.08), 0 0 0 1px rgba(50,46,97,0.1);
+}
